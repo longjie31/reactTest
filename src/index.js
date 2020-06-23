@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import EventTest from './event'
 import * as serviceWorker from './serviceWorker';
-
+import JudgeTest from './judge'
 
 function app(){
     ReactDOM.render(
         <React.StrictMode>
           <App />
+          <EventTest />
+          <JudgeTest />
         </React.StrictMode>,
         document.getElementById('root')
       );
