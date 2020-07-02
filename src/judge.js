@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function UserGreeting(props){
-    return <h1>欢迎回来</h1>
+    return <h1>欢迎回来,lj</h1>
 }
 
 function GuestGreeting(props){
-    return <h1>亲，请登录</h1>
+    const numbers = ['lj','zlq','sz'];
+   /*  const listItems = numbers.map((item)=>
+    <li key={item.toString()}>{item}</li>
+    ); */
+    return <div>
+        <ul>{numbers.map((item)=>
+            <li key={item.toString()} value={item}></li>
+        )}</ul>
+        <h1>亲，请登录</h1>
+    </div> 
 }
 
 function Greeting(props){
