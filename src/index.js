@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import JudgeTest from './judge'
 import FormTest from './form';
 import CalculatorTest from './boiling';
+import TodoList from './todolist';
 
 function app(){
     ReactDOM.render(
@@ -16,6 +17,7 @@ function app(){
           <JudgeTest />
           <FormTest />
           <CalculatorTest />
+          <TodoList />
         </React.StrictMode>,
         document.getElementById('root')
       );
